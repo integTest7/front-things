@@ -1,0 +1,118 @@
+.guesses {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    justify-content: center;
+    position: relative;
+    
+    p {
+        margin: 4% 0% 2%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    & > span {
+        margin: 0 1rem;
+    }
+    
+    p[class^="you-"] {
+        left: 0;
+        right: 0;
+        text-align: center;
+        
+        img {
+            width: 100%;        
+        }
+    }
+    
+    .you-win.hidden, .you-lose {
+        display: none;
+    }
+    
+    .you-win {
+        display: block;
+        position: absolute;
+        
+        &.winmax {
+            top: -30rem;    
+        }
+        &.win {
+            top: -24rem;
+        }        
+    }
+    
+    .you-lose.visible {
+        display: block;
+        position: absolute;
+        top: -16rem;
+    }
+}
+
+/*****************************************/
+/*******        Media queries      *******/
+/*****************************************/
+
+/* Responsive */
+@media (min-width: 600px) {
+    p[class^="you-"] {
+        img {
+            width: auto!important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .guesses {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 94%;
+        margin: 0 auto;
+        
+        p {
+            margin: 1rem 2rem 0 0;            
+        }
+        .you-win {
+            &.winmax {
+                top: -20rem;
+            }
+            &.win {
+                top: -18rem;
+            }
+        }
+        .you-lose.visible {
+            top: -14rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .guesses {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 94%;
+        margin: 0 auto;
+
+        p {
+            margin: 1rem 2rem 0 0;    
+        }
+        p[class^="you-"] {
+            left: auto;
+            right: -10rem;
+        }
+        .you-win {
+            &.winmax {
+                top: -16rem;   
+            }
+            &.win {
+                top: -11rem;
+            }        
+        }
+        .you-lose.visible {
+            top: -4rem;
+        }
+    }
+}

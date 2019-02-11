@@ -1,0 +1,30 @@
+.picture {
+//    margin: 0 2rem;
+    border: 0.4rem solid #FFF;
+    border-radius: 1rem;
+    width: 300px;
+    height: 450px;
+    position: relative;
+
+    img {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.synopsis {
+    color: #FFF;
+}
+
+
+/*****************************************/
+/*******        Media queries      *******/
+/*****************************************/
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .picture {
+        margin: 0 2rem;
+    }
+}

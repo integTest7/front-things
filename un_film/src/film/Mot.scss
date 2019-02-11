@@ -1,0 +1,77 @@
+.un-pendu {
+    .film-container > .titre {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: center;
+        margin: 1rem 0;
+        
+        .word {
+            width: 2.8rem;
+            font-size: 2rem;
+            font-weight: bold;
+            border-radius: 0.6rem;
+            margin: 0.04em;
+            display: flex;
+            cursor: default;
+            background-color: #FFFFFF;
+            
+            &.hidden {
+                background: white;
+            }
+            &.justMatched, &.justMismatched {
+//                border: 0.1rem solid green;
+            }
+            &.justMismatched {
+                border-color: red;
+            }
+            &.visible {
+                cursor: not-allowed;
+            }
+            & > .symbol {
+                margin: auto;
+                background: -webkit-linear-gradient(#3C4154, #010207);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &[data-misc="space"] {
+                visibility: hidden;
+                width: 4%!important;
+            }
+        }
+    }
+}
+
+
+
+/*****************************************/
+/*******        Media queries      *******/
+/*****************************************/
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .un-pendu {
+        .film-container > .titre {
+            margin: 0 0 1rem;
+            
+            .word {
+                width: 4.2rem;
+                font-size: 3.6rem;
+            }
+        }    
+    }    
+}
+
+@media (min-width: 1200px) {
+    .un-pendu {
+        .film-container > .titre {
+            margin: 0 1rem 1rem;
+            
+            .word {
+                width: 4.2rem;
+                font-size: 3.6rem;
+            }
+        }    
+    }
+}

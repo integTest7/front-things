@@ -1,0 +1,29 @@
+.restart-container {
+    color:#02071D;
+    width: fit-content!important;
+    font-weight: bold;
+    background: #FFFFFF;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+    
+    & > button {
+        border: none;
+        background: none;
+        width: 100%;
+        font-size: inherit;
+        font-weight: inherit;
+        cursor:pointer;
+    }
+}
+
+/*****************************************/
+/*******        Media queries      *******/
+/*****************************************/
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .restart-container {
+        margin: 2rem auto!important;
+    }
+}

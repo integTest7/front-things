@@ -1,0 +1,26 @@
+.film-container {
+
+    .synopsis {
+        font-size: 1rem;
+        margin: 0 auto 1rem;
+        color: #FFF;
+        width: 94%;
+    }
+    h3 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+}
+
+/*****************************************/
+/*******        Media queries      *******/
+/*****************************************/
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .synopsis {
+        width: 94%;
+        margin: 1.6rem auto!important;
+    }
+}
