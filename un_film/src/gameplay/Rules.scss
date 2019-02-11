@@ -1,0 +1,16 @@
+.rules {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    height: 450px;
+    font-size: 0.9rem;
+    
+    h4 {
+        margin: 0 0 0 1rem;
+    }
+    
+    ul {
+        list-style: square;
+        line-height: 1.6rem;
+    }
+}
