@@ -1,0 +1,4 @@
+[build]
+base = "un_film/"
+publish = "un_film/build/"
+command = "yarn build"
