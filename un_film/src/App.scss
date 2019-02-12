@@ -16,6 +16,16 @@ body {
     font-size: 1.6rem; 
 }
 
+a {
+    color: #FFF;
+    text-decoration: underline;
+        
+    &:hover{
+        color: aqua;
+        text-decoration: none;
+    }
+}
+
 .un-pendu {
     display: flex;
     flex-wrap: wrap;
