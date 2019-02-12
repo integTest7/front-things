@@ -383,6 +383,7 @@ class App extends Component {
             <div className="draw-container">
                 <canvas ref="canvas"></canvas>
                 <span>This product uses the TMDb API but is not endorsed or certified by TMDb.</span>
+                <span>&copy; Author <a href="https://github.com/integTest7" target="_blank" rel="noopener noreferrer">integTest7</a> realised with <a href="https://reactjs.org/"  target="_blank" rel="noopener noreferrer">React</a></span>
             </div>
         </div>
     );
