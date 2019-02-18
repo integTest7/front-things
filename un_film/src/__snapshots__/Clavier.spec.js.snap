@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Clavier /> should do a snapshot 1`] = `
+<div
+  className="btn-custom"
+>
+  <button
+    className="letter M"
+    onClick={[Function]}
+  >
+    M
+  </button>
+</div>
+`;
